@@ -13,5 +13,5 @@ def summary(request):
 
     elif request.method == 'POST':
         text = request.POST.get('text', False)
-        messages.info(request, summarizer.summarize(text))
-        return render(request, "summary.html")
+        summary = summarizer.summarize(text)
+        return render(request, "summary.html", {'summary': summary})

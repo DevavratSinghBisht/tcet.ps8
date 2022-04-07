@@ -1,15 +1,77 @@
 {% load static %}
-
 <!DOCTYPE html>
+<!-- saved from url=(0085)file:///C:/Users/Lenovo/Downloads/summary/contact-form-v2/ContactFrom_v2/summary.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Contact V2</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{% static 'summary/images/icons/favicon.ico' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'summary/summary_files/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'summary/summary_files/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'summary/summary_files/animate.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'summary/summary_files/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'summary/summary_files/select2.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'summary/summary_files/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'summary/summary_files/main.css' %}">
+<!--===============================================================================================-->
+</head>
+<body>
 
-    <head>
+	<div class="bg-contact2" style="background-image: url({% static 'index/images/desk.jpg'%});">
+		<div class="container-contact2">
+			<div class="wrap-contact2">
+				<form class="contact2-form validate-form">
+					<span class="contact2-form-title">
+						TEXT SUMMARIZER
+					</span>
 
-    </head>
+					<div class="wrap-input2 validate-input" data-validate="Message is required">
+						<span class="focus-input2">
+							{{summary}}
+						</span>
+					</div>
 
-    <body>
+					<div class="container-contact2-form-btn">
+						<div class="wrap-contact2-form-btn">
+							<div class="contact2-form-bgbtn"></div>
+							
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 
-        {% for message in messages %}
-            {{message}}
-        {% endfor %}
 
-    </body>
+
+
+<!--===============================================================================================-->
+	<script type="text/javascript" async="" src="{% static 'summary/summary_files/analytics.js.download' %}"></script><script src="{% static 'summary/summary_files/jquery-3.2.1.min.js.download' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'summary/summary_files/popper.js.download' %}"></script>
+	<script src="{% static 'summary/summary_files/bootstrap.min.js.download' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'summary/summary_files/select2.min.js.download' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'summary/summary_files/main.js.download' %}"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="" src="{% static 'summary/summary_files/js' %}"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+
+
+
+</body></html>
